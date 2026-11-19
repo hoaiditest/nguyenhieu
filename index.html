@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>An Nhiên Spa – Trị liệu bằng tâm tại Hải Phòng</title>
+  <meta name="description" content="An Nhiên Spa – massage trị liệu, chăm sóc da, gội đầu dưỡng sinh tại Hải Phòng. Đặt lịch nhanh, tư vấn miễn phí." />
+  <meta property="og:title" content="An Nhiên Spa – Trị liệu bằng tâm" />
+  <meta property="og:description" content="Không gian thư giãn, kỹ thuật viên tận tâm. Đặt lịch ngay hôm nay." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#151210" />
+  <link rel="icon" href="/images/lotus.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "DaySpa", "name": "An Nhiên Spa",
+    "telephone": "0900000000", "address": { "@type": "PostalAddress", "streetAddress": "123 Đường Mẫu", "addressLocality": "Hải Phòng", "addressCountry": "VN" },
+    "openingHours": "Mo-Su 09:00-21:00" }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua đến nội dung</a>
+
+  <!-- 1. Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <a data-href="mailto" data-site="email"></a>
+        <a data-href="tel" data-site="phone"></a>
+      </div>
+      <div class="topbar__right">
+        <a href="#dat-lich">Liên hệ &amp; Đặt lịch hẹn</a>
+        <div class="dropdown">
+          <button class="dropdown__btn" aria-expanded="false">Hỗ trợ khách hàng ▾</button>
+          <ul class="dropdown__menu">
+            <li><a data-href="facebook">Fanpage Facebook</a></li>
+            <li><a data-href="zalo">Hỗ trợ qua Zalo</a></li>
+            <li><a data-href="tel">Hotline: <span data-site="phone"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header -->
+  <header class="header" id="header">
+    <div class="container header__main">
+      <a href="#" class="logo" aria-label="Trang chủ">
+        <img src="/images/lotus.svg" alt="" width="44" height="44" />
+        <span><strong data-site="name"></strong><small>Trị liệu bằng tâm</small></span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <input type="search" placeholder="Tìm dịch vụ, combo..." aria-label="Tìm kiếm" />
+      </form>
+      <a class="hotline" data-href="tel">
+        <span class="hotline__icon" aria-hidden="true">☎</span>
+        <span><small>Chăm sóc khách hàng</small><strong data-site="phone"></strong></span>
+      </a>
+      <button class="burger" aria-label="Mở menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav" id="nav" aria-label="Menu chính">
+      <div class="container">
+        <ul class="nav__list">
+          <li><a href="#" class="active">Trang chủ</a></li>
+          <li><a href="#gioi-thieu">Về <span data-site="name"></span></a></li>
+          <li class="has-sub"><a href="#dich-vu">Dịch vụ</a><ul class="sub" id="nav-services"></ul></li>
+          <li><a href="#combo">Combo ưu đãi</a></li>
+          <li><a href="#tin-tuc">Cẩm nang &amp; Tin tức</a></li>
+          <li><a href="#dat-lich">Liên hệ &amp; Đặt lịch hẹn</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 3. Về spa -->
+    <section class="section about" id="gioi-thieu">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="ph ph--tall tone-0" role="img" aria-label="Không gian phòng trị liệu"></div>
+          <div class="about__badge"><strong>10+</strong><span>năm kinh nghiệm</span></div>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">Về chúng tôi</p>
+          <h1 class="title">Về <span data-site="name"></span></h1>
+          <blockquote>“Mỗi vị khách bước vào là một cơ thể cần được lắng nghe, không phải một lượt phục vụ.”</blockquote>
+          <p>Lấy cảm hứng từ đóa sen vươn lên thanh khiết, <span data-site="name"></span> mang đến không gian tĩnh lặng giữa lòng phố thị. Đội ngũ kỹ thuật viên được đào tạo bài bản về trị liệu cổ truyền và chăm sóc da hiện đại, đặt sự an toàn và cảm nhận của bạn lên hàng đầu.</p>
+          <a href="#dich-vu" class="btn">Xem thêm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Nguyên tắc -->
+    <section class="section values">
+      <div class="container">
+        <p class="eyebrow center">Giá trị cốt lõi</p>
+        <h2 class="title center">Nguyên tắc làm nghề bằng tâm</h2>
+        <div class="grid grid--4" id="principles"></div>
+      </div>
+    </section>
+
+    <!-- 5. Dịch vụ -->
+    <section class="section services" id="dich-vu">
+      <div class="container">
+        <p class="eyebrow center">Dịch vụ</p>
+        <h2 class="title center">Dịch vụ nổi bật</h2>
+        <div class="grid grid--3" id="services"></div>
+      </div>
+    </section>
+
+    <!-- 6. Combo -->
+    <section class="section combos" id="combo">
+      <div class="container">
+        <p class="eyebrow center">Ưu đãi</p>
+        <h2 class="title center">Combo ưu đãi</h2>
+        <div class="grid grid--3" id="combos"></div>
+      </div>
+    </section>
+
+    <!-- 7. Đánh giá -->
+    <section class="section reviews">
+      <div class="container">
+        <p class="eyebrow center">Khách hàng nói gì</p>
+        <h2 class="title center">Cảm nhận khách hàng</h2>
+        <div class="slider" id="slider" aria-roledescription="carousel">
+          <div class="slider__track" id="testimonials"></div>
+          <div class="slider__dots" id="dots" role="tablist"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA đặt lịch -->
+    <section class="section cta" id="dat-lich">
+      <div class="container cta__inner">
+        <div class="reveal">
+          <p class="eyebrow">Đặt lịch hẹn</p>
+          <h2 class="title">Bạn đã sẵn sàng để cơ thể nghỉ ngơi?</h2>
+          <p>Để lại thông tin, chúng tôi sẽ gọi lại tư vấn trong vòng 15 phút (giờ làm việc: <span data-site="hours"></span>).</p>
+        </div>
+        <form class="form reveal" id="booking" novalidate>
+          <div class="field">
+            <label for="b-name">Họ và tên *</label>
+            <input id="b-name" name="name" type="text" placeholder="Nhập họ và tên..." autocomplete="name" />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="b-phone">Số điện thoại *</label>
+            <input id="b-phone" name="phone" type="tel" placeholder="Nhập số điện thoại..." autocomplete="tel" inputmode="numeric" />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="b-service">Dịch vụ quan tâm</label>
+            <select id="b-service" name="service"><option value="">-- Chọn dịch vụ --</option></select>
+          </div>
+          <div class="field">
+            <label for="b-time">Ngày giờ hẹn</label>
+            <input id="b-time" name="time" type="datetime-local" />
+          </div>
+          <button type="submit" class="btn btn--block">Đặt lịch ngay</button>
+          <p class="form__msg" id="booking-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 9. Tin tức -->
+    <section class="section news" id="tin-tuc">
+      <div class="container">
+        <p class="eyebrow center">Cẩm nang</p>
+        <h2 class="title center">Bài viết tin tức</h2>
+        <div class="grid grid--3" id="posts"></div>
+        <p class="center"><a href="#tin-tuc" class="btn btn--ghost">Xem tất cả</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10–11. Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo"><img src="/images/lotus.svg" alt="" width="44" height="44" /><span><strong data-site="name"></strong><small>Trị liệu bằng tâm</small></span></a>
+        <p>Hoa sen mọc từ bùn mà không nhiễm bùn – biểu tượng cho sự thanh lọc và an yên mà chúng tôi muốn trao đến mỗi vị khách.</p>
+      </div>
+      <div>
+        <h3>Thông tin liên hệ</h3>
+        <ul class="list">
+          <li>📍 <span data-site="address"></span></li>
+          <li>☎ <a data-href="tel" data-site="phone"></a> – <a data-href="tel2" data-site="phone2"></a></li>
+          <li>✉ <a data-href="mailto" data-site="email"></a></li>
+          <li>🕘 <span data-site="hours"></span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Dịch vụ nổi bật</h3>
+        <ul class="list" id="footer-services"></ul>
+      </div>
+      <div>
+        <h3>Tư vấn giải đáp thắc mắc</h3>
+        <form class="form form--mini" id="consult" novalidate>
+          <div class="field"><input name="name" type="text" placeholder="Nhập họ và tên..." aria-label="Họ và tên" /><small class="error"></small></div>
+          <div class="field"><input name="phone" type="tel" placeholder="Nhập số điện thoại..." aria-label="Số điện thoại" inputmode="numeric" /><small class="error"></small></div>
+          <button type="submit" class="btn btn--block">Gửi yêu cầu</button>
+          <p class="form__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© <span id="year"></span> <span data-site="name"></span>. Bảo lưu mọi quyền.</p>
+      <p class="credit">Thiết kế bởi Mai Duy</p>
+    </div>
+  </footer>
+
+  <!-- 12. Nút nổi -->
+  <div class="floating" aria-label="Liên hệ nhanh">
+    <a data-href="tel" class="fab fab--call" aria-label="Gọi điện">☎</a>
+    <a data-href="zalo" class="fab fab--zalo" aria-label="Chat Zalo">Zalo</a>
+    <a data-href="messenger" class="fab fab--mess" aria-label="Chat Messenger">💬</a>
+  </div>
+  <button class="to-top" id="to-top" aria-label="Lên đầu trang">↑</button>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
